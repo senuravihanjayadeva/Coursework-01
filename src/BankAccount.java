@@ -1,12 +1,10 @@
-package lk.gugsi.ConcurrentProgramming.Assignment;
-
 import java.util.List;
 
 public class BankAccount {
 	
 	private String accountNumber;
-	private List<Customer> customers; 
-	private double balance; // BigDecimal is recommended to use
+	private List<Customer> customers;
+	private double balance;
 	private AccountType accountType;
 	private boolean overdraftAvailable;
 	private double overdraftLimit;
@@ -97,7 +95,7 @@ public class BankAccount {
 			
 			if (amount <= amountAvailable) {
 				this.balance -= amount;
-				System.out.println(Thread.currentThread().getName()+" withdrawal successfull in the account "+this.accountNumber);
+				System.out.println(Thread.currentThread().getName()+" withdrawal successful in the account "+this.accountNumber);
 				System.out.println("Amount withdrawn is "+amount+" balance after withdrawal is "+this.balance);
 			} else {
 				throw new IllegalArgumentException("Insufficient funds");
@@ -111,10 +109,10 @@ public class BankAccount {
 	public synchronized void deposit(double amount) {
 		if(amount > 0) {
 			this.balance += amount;
-			System.out.println(Thread.currentThread().getName()+" deposit successfull in the account "+this.accountNumber);
-			System.out.println("Amount deposited is "+amount+" balance after depsoit is "+this.balance);
+			System.out.println(Thread.currentThread().getName()+" deposit successful in the account "+this.accountNumber);
+			System.out.println("Amount deposited is "+amount+" balance after deposit is "+this.balance);
 		} else {
-			throw new IllegalArgumentException("Amount you wish to withdraw cannot be 0 or below");
+			throw new IllegalArgumentException("Amount you wish to deposit cannot be 0 or below");
 		}
 	}
 	
@@ -122,7 +120,7 @@ public class BankAccount {
 		if(amount > 0) {
 			this.balance += amount;
 			System.out.println(Thread.currentThread().getName()+" Interest is add to account "+this.accountNumber);
-			System.out.println("Interest Amount  "+amount+" balance after interest is added "+this.balance);
+			System.out.println("Interest Amount is "+amount+" balance after interest added is "+this.balance);
 		} else {
 			throw new IllegalArgumentException("Interest Amount cannot be 0 or below");
 		}
@@ -132,10 +130,36 @@ public class BankAccount {
 		if(amount > 0) {
 			this.balance -= amount;
 			System.out.println(Thread.currentThread().getName()+" Income Tax is deducted from the account "+this.accountNumber);
-			System.out.println("Income Tax Amount  "+amount+" balance after IncomeTax is deducted "+this.balance);
+			System.out.println("Income Tax Amount is "+amount+" balance after IncomeTax deducted is "+this.balance);
 		} else {
 			throw new IllegalArgumentException("Interest Amount cannot be 0 or below");
 		}
 	}
 
+	public synchronized void deductAnnualCharges(double amount) {
+		if(this.accountType == AccountType.REGULAR) {
+			this.balance = this.balance - amount;
+			System.out.println(Thread.currentThread().getName() + "Annual Charges deducted from the account :" + this.accountNumber);
+			System.out.println("Annual Charge  :" + amount);
+			System.out.println("New balance :" + this.balance);
+		}else {
+			throw new IllegalArgumentException("Only for Regular Accounts");
+		}
+	}
+
+	public synchronized void deductOverdraftCharge(double amount)
+	{
+		if(amount >= 0) {
+			this.balance -= amount;
+			System.out.println(Thread.currentThread().getName()+" Overdraft charge is deducted from the account " + this.accountNumber);
+			System.out.println("Overdraft Charge :" + amount);
+			System.out.println("New balance :"+ this.balance);
+		} else {
+			throw new IllegalArgumentException("Overdraft Charge should be more than zero");
+		}
+	}
+
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
 }

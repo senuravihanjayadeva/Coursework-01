@@ -1,34 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="28b89e7e-7329-4cc6-9c7d-8812021ec96d" name="Changes" comment="" />
+    <list default="true" id="28b89e7e-7329-4cc6-9c7d-8812021ec96d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coursework 01.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AccountType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AnnualChargesCalculationManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BankAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Depositor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IncomeTaxCalculationManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/InterestCalculationManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OverdraftCalculationManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Receiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/BankAccountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/BankTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2cuuiot7oiSgfTGRkwmmJrVXFAU" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Client.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "true",
+    "JUnit.AnnualChargesCalculationManagerTest.executor": "Run",
+    "JUnit.BankAccountConcurrencyTest.executor": "Run",
+    "JUnit.BankAccountDeductionTest.executor": "Run",
+    "JUnit.BankAccountDeductionTest.testDeductAnnualChargesRegularAccountConcurrently.executor": "Run",
+    "JUnit.BankAccountDeductionTest.testDeductAnnualChargesVIPAccountConcurrently.executor": "Run",
+    "JUnit.BankAccountDeductionTest.testDeductIncomeTaxConcurrently.executor": "Run",
+    "JUnit.BankAccountDeductionTest.testDeductOverdraftChargeConcurrently.executor": "Run",
+    "JUnit.BankAccountTest.executor": "Run",
+    "JUnit.BankAccountTest.testWithdrawalNegativeAmount.executor": "Run",
+    "JUnit.BankAccountTest.testWithdrawalNegativeAmountConcurrently.executor": "Run",
+    "JUnit.BankAccountTest.withdraw.executor": "Run",
+    "JUnit.BankTest.executor": "Run",
+    "JUnit.BankTest.testGetAccountConcurrently.executor": "Run",
+    "JUnit.DepositorTest.executor": "Run",
+    "JUnit.IncomeTaxCalculationManagerTest.executor": "Run",
+    "JUnit.InterestCalculationManagerTest.executor": "Run",
+    "JUnit.ReceiverTest.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/senurajayadeva/Downloads/Coursework 01",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All in Coursework 01">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Client" />
+      <module name="Coursework 01" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in Coursework 01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Coursework 01" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AnnualChargesCalculationManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Coursework 01" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AnnualChargesCalculationManagerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Coursework 01" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BankAccountTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Coursework 01" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BankTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in Coursework 01" />
+        <item itemvalue="Application.Client" />
+        <item itemvalue="JUnit.BankAccountTest" />
+        <item itemvalue="JUnit.BankTest" />
+        <item itemvalue="JUnit.AnnualChargesCalculationManagerTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -44,7 +181,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1708973916779</updated>
-      <workItem from="1708973918424" duration="1000" />
+      <workItem from="1708973918424" duration="1935000" />
+      <workItem from="1711858414369" duration="35781000" />
     </task>
     <servers />
   </component>

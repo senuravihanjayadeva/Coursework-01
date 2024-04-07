@@ -1,7 +1,5 @@
-package lk.gugsi.ConcurrentProgramming.Assignment;
-
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Bank {
 	
@@ -56,11 +54,25 @@ public class Bank {
 	}
 	
 	public void annualCharges() {
-		// write the logic to apply annual charges only for Regular Account
+		for (BankAccount account : accounts) {
+			if (account.getAccountType() == AccountType.REGULAR) {
+				if(account.getBalance() > 1000){
+					double annualCharges = 500;
+					account.deductAnnualCharges(annualCharges);
+				}
+			}
+		}
 	}
 	
 	public void overdraftCharges() {
-		// write the logic if overdrafted charge for both account
+		for (BankAccount account : accounts) {
+			if (account.getBalance() < 0) {
+				if(account.isOverdraftAvailable()) {
+					double overdraftCharge = account.getOverdraftLimit();
+					account.deductOverdraftCharge(overdraftCharge);
+				}
+			}
+		}
 	}
 	
 

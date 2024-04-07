@@ -1,5 +1,3 @@
-package lk.gugsi.ConcurrentProgramming.Assignment;
-
 public class Customer {
 	
 	private String customerID;

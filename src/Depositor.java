@@ -1,5 +1,3 @@
-package lk.gugsi.ConcurrentProgramming.Assignment;
-
 public class Depositor implements Runnable {
 	
 	private BankAccount account;
@@ -12,7 +10,6 @@ public class Depositor implements Runnable {
 		this.account = account;
 		this.amount = amount;
 	}
-
 
 
 	@Override

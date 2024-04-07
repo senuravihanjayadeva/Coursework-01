@@ -1,5 +1,3 @@
-package lk.gugsi.ConcurrentProgramming.Assignment;
-
 public class InterestCalculationManager implements Runnable {
 	
 	private Bank bank;
@@ -9,12 +7,13 @@ public class InterestCalculationManager implements Runnable {
 		this.bank = bank;
 	}
 
-
-
 	@Override
 	public void run() {
-		// exception handling has to be added
-		bank.addInterest();
+		try {
+			bank.addInterest();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 	}
 
 }

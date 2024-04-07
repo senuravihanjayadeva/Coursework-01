@@ -1,12 +1,8 @@
-package lk.gugsi.ConcurrentProgramming.Assignment;
-
 public class Receiver implements Runnable {
 	
 	private Customer customer;
 	private BankAccount account;
 	private double amount;
-	
-	
 
 	public Receiver(Customer customer, BankAccount account, double amount) {
 		super();
@@ -15,18 +11,18 @@ public class Receiver implements Runnable {
 		this.amount = amount;
 	}
 
-
-
 	@Override
 	public void run() {
-		// Write the logic to verify if customer is part of the account
-		// if it is true
-		try {
-			account.withdraw(amount);
-		}catch(Exception e) {
-			System.out.println("Error in withdrawal "+e.getMessage());
+		boolean isCustomerPart = account.getCustomers().contains(customer);
+		if (isCustomerPart) {
+			try {
+				account.withdraw(amount);
+			} catch (Exception e) {
+				System.out.println("Error in withdrawal: " + e.getMessage());
+			}
+		} else {
+			System.out.println(customer.getCustomerID() + " is not a part of  account " + account.getAccountNumber());
 		}
-		
 
 	}
 
